@@ -101,8 +101,8 @@ app.use(function(req,res){
     res.send("404 not found.");
 });
 
-
+var port=process.env.PORT || 3001;
 //aps listens on respective port
-app.listen("3001",function(){
-    console.log("node listening on port 3001");
+app.listen(port,function(){
+    console.log("node listening on port "+port);
 });
